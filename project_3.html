@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Savyaraj Deshmukh</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="#" class="image avatar"><img src="images/me.png" height="100" alt="" /></a>
+					<h1><strong>Savyaraj Deshmukh</strong> <br/>Master in Robotics<br />
+					savyaraj.deshmukh@epfl.ch
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+
+
+						<h2>Major Projects</h2>
+
+						<section>
+							<h4>Trajectory Planning and control of 2D quadcopter</h4>
+							<i>Undergraduate thesis, IIT Bombay</i>
+							<p>In this project, I worked on motion planning of a 2D bot in cluttered environment and control algorithms for
+							trajectory tracking</p>
+							<p>
+								<span class="image right"><img src="images/track.png" alt="" /></span>
+								To generate optimal trajectories through obstacles, the dynamics were discretized using motion primitives based trajectory (cite d'andrea).
+								Thus, the optimal control problem was converted into a graph search, which was solved using A* graph search algorithm.
+								The velocity controlled trajectories generated trapezoidal profile which was easy to obtain, but significantly deformed the optimal
+								path. Conversely, jerk (rate of acceleration) controlled trajectories were more smooth. But simulation time for graph search in
+								in higher dimensional space was very slow. To circumvent this, trajectory refinement (cite vijay kumar) was used which used sub-optimal trajectories
+								in lower dimensional space as heuristic for higher dimensions. The resulting trajectories are shown in the image below:
+							</p>
+
+							 <p>
+								 To follow the trajectories, cascade PID controller architectures were implemented. Initially, the dynamics were linearized
+								 for simplicity, but the nonlinear controller was found to have much better performance during dynamically demanding tasks.
+								 <br>
+								 Link to the report:
+							 </p>
+
+
+							</section>
+				</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
