@@ -35,11 +35,11 @@
 							trajectory tracking</p>
 							<p>
 								<span class="image right"><img src="images/track.png" alt="" /></span>
-								To generate optimal trajectories through obstacles, the dynamics were discretized using motion primitives based trajectory (cite d'andrea).
+								To generate optimal trajectories through obstacles, the dynamics were discretized using motion primitives based trajectory (<a href="https://ieeexplore.ieee.org/document/8336503">Brescianini and DAndrea (2018)</a>).
 								Thus, the optimal control problem was converted into a graph search, which was solved using A* graph search algorithm.
 								The velocity controlled trajectories generated trapezoidal profile which was easy to obtain, but significantly deformed the optimal
 								path. Conversely, jerk (rate of acceleration) controlled trajectories were more smooth. But simulation time for graph search in
-								in higher dimensional space was very slow. To circumvent this, trajectory refinement (cite vijay kumar) was used which used sub-optimal trajectories
+								in higher dimensional space was very slow. To circumvent this, trajectory refinement (<a href="https://ieeexplore.ieee.org/abstract/document/8264768">reference</a>) was used which used sub-optimal trajectories
 								in lower dimensional space as heuristic for higher dimensions. The resulting trajectories are shown in the image below:
 								<span class="image center"><img src="images/exploration.png" width=900 alt="" /></span>
 							</p>
